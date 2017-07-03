@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>YLMarquee文字向左滚动演示_做好网站</title>
+<style type="text/css">
+#scroll { width: 300px; line-height: 32px; margin: 50px auto 0; border: 1px solid #ccc; font-size: 12px;}
+#scroll ul { list-style-type: }
+#scroll li { margin-left: 20px;}
+#scroll a { color: #333; text-decoration: none;}
+#scroll a:hover { color: #f50;}
+</style>
+<script src="js/jquery-1.4.2.min.js"></script>
+<script src="js/YLMarquee-1.1.js"></script>
+<script>
+$(function(){
+	$("#scroll").YlMarquee({
+        textMode : true,
+        width : 728,
+        visible : 2,
+        step : 2
+    });
+});
+</script>
+</head>
+
+<body>
+<h1>YLMarquee文字向左滚动演示</h1>
+
+<div class="menu">
+    <a href="index.html">演示1（图片向左滚动）</a>
+    <a href="index-2.html">演示2（图片向上滚动）</a>
+    <a href="index-3.html" class="cur">演示3（文字向左滚动）</a>
+    <a href="index-4.html">演示4（文字向上滚动）</a>
+</div>
+
+<div id="scroll">
+    <ul>
+        <li><a href="">·scrollUp - jQuery滚动到顶部插件</a></li>
+        <li><a href="">·BlackAndWhite - jQuery图片黑白开关插件</a></li>
+        <li><a href="">·Flat UI - 绿色风格精致UI PSD/HTML套装下载</a></li>
+        <li><a href="">·简洁的登录页面PSD源文件</a></li>
+        <li><a href="">·jQuery立体相册插件Parallax Slider</a></li>
+        <li><a href="">·jQuery下拉框美化插件DropKick</a></li>
+        <li><a href="">·jQuery幻灯片插件Sudo Slider</a></li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+<!-- 以下是统计和广告，与演示无关，不必理会 -->
+<style type="text/css">
+h1 { margin: 40px; font: 32px Microsoft Yahei; text-align: center;}
+
+.menu { height: 30px; padding: 10px; background-color: #f0f0f0; text-align: center;}
+.menu a { display: inline-block; height: 30px; padding: 0 20px; line-height: 30px; font-size: 14px; color: #333; text-decoration: none;}
+.menu a:hover { color: #000; background-color: #e9e9e9;}
+.menu .cur { background-color: #ddd !important; color: #000;}
+
+.vad { margin: 100px 0 5px; font-family: arial,宋体,sans-serif; text-align:center;}
+.vad a { display:inline-block; margin:0 5px; padding:5px 10px; font-size:14px; text-align:center; color:#eee; text-decoration:none; background-color:#222;}
+.vad a:hover { color:#fff; background-color:#000;}
+
+.a728x90 { width: 728px; height: 90px; margin: 0 auto;}
+</style>
+
+<p class="vad"><a href="http://www.dowebok.com/" target="_blank">访问 dowebok.com</a> <a href="http://www.dowebok.com/html/2013/ylmarquee.html" target="_blank">使用说明及方法</a> <a href="http://www.dowebok.com/plus/download.php?open=0&aid=10&cid=3" target="_blank">代码下载</a></p>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>jQuery页面自动滚动插件autoscroll.js演示_dowebok</title>
+<style>
+* { margin: 0; padding: 0;}
+.section { height: 500px; text-align: center; font: 24px/500px "Microsoft Yahei"; color: #fff;}
+.section a { display: inline-block; margin: 0 20px; padding: 0 30px; line-height: 2; color: #000; background-color: #fff; text-decoration: none;}
+.section1 { line-height: 50px; background-color: #1bbc9b;}
+.section1 h1 { padding: 160px 0 20px; font-size: 50px;}
+.section1 a { color: #fff; background-color: transparent; text-decoration: none;}
+.section2 { background-color: #de564b;}
+.section3 { background-color: #fc9d9a;}
+.section4 { background-color: #fe4365;}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/autoscroll.js"></script>
+
+</head>
+
+<body>
+<div class="section section1">
+	<h1><a href="http://www.dowebok.com/133.html" target="_blank">AutoScroll.js</a></h1>
+	<p>——jQuery页面自动滚动插件</p>
+</div>
+<div class="section section2">
+	<p>当鼠标移动到可视区域上端或下端时页面就会自动滚动</p>
+</div>
+<div class="section section3">
+	<p>兼容 IE6+、Firefox、Google、Safari、Opera</p>
+</div>
+<div class="section section4">
+	<a href="http://www.dowebok.com/" target="_blank">首 页</a>
+	<a href="http://www.dowebok.com/133.html" target="_blank">说 明</a>
+	<a href="http://www.dowebok.com/133.html" target="_blank">下 载</a>
+</div>
+
+<script>
+$(function(){
+	window.autoscroll.interval = 25;
+	window.autoscroll.threshold = 100;
+	window.autoscroll.velocity = 5;
+	window.autoscroll.acceleration = 0;
+	window.autoscroll.start();
+});
+</script>
+
+</body>
+</html>

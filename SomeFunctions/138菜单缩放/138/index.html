@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>大小可变导航菜单演示_dowebok</title>
+<meta charset="utf-8">
+<style>
+* { margin: 0; padding: 0;}
+.dowebok .header { position: fixed; left: 0; top: 0; width: 100%; background-color: #323436;}
+.dowebok .inner { width: 1000px; margin: 0 auto; overflow: hidden; zoom: 1;}
+.dowebok h1 { float: left;}
+.dowebok h1 img { display: block; border: 0;}
+.dowebok .nav { float: right; list-style-type: none; font-family: "Microsoft Yahei";}
+.dowebok .nav li { float: left; margin-left: 5px;}
+.dowebok .nav a { float: left; color: #cecece; text-decoration: none;}
+.dowebok .nav a:hover { background-color: #555;}
+
+.dowebok .large .inner { padding: 20px 0;}
+.dowebok .large h1 img { height: 64px;}
+.dowebok .large .nav { padding-top: 10px;}
+.dowebok .large .nav a { height: 44px; padding: 0 20px; line-height: 44px; font-size: 18px;}
+
+.dowebok .small .inner { padding: 10px 0;}
+.dowebok .small h1 img { height: 34px;}
+.dowebok .small .nav { padding-top: 3px;}
+.dowebok .small .nav a { height: 28px; padding: 0 10px; line-height: 28px; font-size: 14px;}
+
+.dowebok .header, .dowebok .inner, .dowebok a, .dowebok img, .dowebok li { transition: all 1s; -moz-transition: all 1s; -webkit-transition: all 1s; -o-transition: all 1s;}
+
+.section { height: 1000px;}
+</style>
+</head>
+
+<body class="dowebok">
+<div class="header large">
+	<div class="inner">
+		<h1><a href="http://www.dowebok.com/"><img src="images/logo.png" alt="logo"></a></h1>
+		<ul class="nav">
+			<li><a class="cur" href="http://www.dowebok.com/" title="首页">首页</a></li>
+			<li><a href="http://www.dowebok.com/code" title="代码">代码</a></li>
+			<li><a href="http://www.dowebok.com/material" title="素材">素材</a></li>
+			<li><a href="http://www.dowebok.com/template" title="模板">模板</a></li>
+		</ul>
+	</div>
+</div>
+<div class="section">
+	<p style="margin-top: 300px; text-align: center; color: #f50;">往下滚动查看菜单变化</p>
+</div>
+
+<script src="http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
+<script>
+$(function(){
+	$(window).on('scroll', function(){
+		if($(window).scrollTop() > 100){
+			$('.header').removeClass('large').addClass('small');
+		} else {
+			$('.header').removeClass('small').addClass('large');
+		}
+	});
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+<!-- 以下是统计等信息，与演示无关，不必理会 -->
+<style>
+.dowebok .vad { margin: 50px 0 5px; font-family: Consolas,arial,宋体; text-align:center;}
+.dowebok .vad a { display: inline-block; height: 36px; line-height: 36px; margin: 0 5px; padding: 0 50px; font-size: 14px; text-align:center; color:#eee; text-decoration: none; background-color: #222;}
+.dowebok .vad a:hover { color: #fff; background-color: #000;}
+.dowebok .thead { width: 728px; height: 90px; margin: 0 auto; border-bottom: 60px solid transparent;}
+</style>
+<p class="vad">
+	<a href="http://www.dowebok.com/" target="_blank">dowebok.com</a>
+	<a href="http://www.dowebok.com/138.html" target="_blank">说 明</a>
+	<a href="http://www.dowebok.com/138.html" target="_blank">下 载</a>
+</p>
+<div class="thead"></div>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>jQuery-Fakecrop - jQuery缩略图插件演示_dowebok</title>
+<style type="text/css">
+.wrapper { width: 800px; margin: 0 auto; }
+.container { width: 800px; margin: 0 auto; }
+.container a { margin: 0 10px 10px 0; text-decoration: none; display: inline-block; border: 1px solid #ddd; }
+img { border: 0; height: 100px; vertical-align: top;}
+</style>
+
+</head>
+<body>
+<div class="wrapper">
+	<h1>jQuery-Fakecrop - jQuery缩略图插件演示</h1>
+	<h2>正常情况</h2>
+	<div id="normal" class="container">
+		<a href="img/1.jpg"><img alt="Image 1" src="img/1.jpg"></a>
+		<a href="img/2.jpg"><img alt="Image 2" src="img/2.jpg"></a>
+		<a href="img/3.jpg"><img alt="Image 3" src="img/3.jpg"></a>
+		<a href="img/4.jpg"><img alt="Image 4" src="img/4.jpg"></a>
+		<a href="img/5.jpg"><img alt="Image 5" src="img/5.jpg"></a>
+		<a href="img/6.jpg"><img alt="Image 6" src="img/6.jpg"></a>
+		<a href="img/7.jpg"><img alt="Image 7" src="img/7.jpg"></a>
+		<a href="img/8.jpg"><img alt="Image 8" src="img/8.jpg"></a>
+		<a href="img/9.jpg"><img alt="Image 9" src="img/9.jpg"></a>
+		<a href="img/10.jpg"><img alt="Image 10" src="img/10.jpg"></a>
+	</div>
+
+	<h2>使用 Fakecrop (default)</h2>
+	<pre>$('#fakecrop-fill img').fakecrop();</pre>
+	<div id="fakecrop-fill" class="container">
+		<a href="img/1.jpg"><img alt="Image 1" src="img/1.jpg"></a>
+		<a href="img/2.jpg"><img alt="Image 2" src="img/2.jpg"></a>
+		<a href="img/3.jpg"><img alt="Image 3" src="img/3.jpg"></a>
+		<a href="img/4.jpg"><img alt="Image 4" src="img/4.jpg"></a>
+		<a href="img/5.jpg"><img alt="Image 5" src="img/5.jpg"></a>
+		<a href="img/6.jpg"><img alt="Image 6" src="img/6.jpg"></a>
+		<a href="img/7.jpg"><img alt="Image 7" src="img/7.jpg"></a>
+		<a href="img/8.jpg"><img alt="Image 8" src="img/8.jpg"></a>
+		<a href="img/9.jpg"><img alt="Image 9" src="img/9.jpg"></a>
+		<a href="img/10.jpg"><img alt="Image 10" src="img/10.jpg"></a>
+	</div>
+
+	<h2>使用 Fakecrop {fill : false}</h2>
+	<pre>$('#fakecrop img').fakecrop({ fill: false });</pre>
+	<div id="fakecrop" class="container">
+		<a href="img/1.jpg"><img alt="Image 1" src="img/1.jpg"></a>
+		<a href="img/2.jpg"><img alt="Image 2" src="img/2.jpg"></a>
+		<a href="img/3.jpg"><img alt="Image 3" src="img/3.jpg"></a>
+		<a href="img/4.jpg"><img alt="Image 4" src="img/4.jpg"></a>
+		<a href="img/5.jpg"><img alt="Image 5" src="img/5.jpg"></a>
+		<a href="img/6.jpg"><img alt="Image 6" src="img/6.jpg"></a>
+		<a href="img/7.jpg"><img alt="Image 7" src="img/7.jpg"></a>
+		<a href="img/8.jpg"><img alt="Image 8" src="img/8.jpg"></a>
+		<a href="img/9.jpg"><img alt="Image 9" src="img/9.jpg"></a>
+		<a href="img/10.jpg"><img alt="Image 10" src="img/10.jpg"></a>
+	</div>
+</div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.fakecrop.js"></script>
+<script>
+$(document).ready(function () {
+	$('#fakecrop-fill img').fakecrop();
+	$('#fakecrop img').fakecrop({
+		fill : false
+	});
+});
+</script> 
+
+
+
+
+
+
+
+
+
+
+<!-- 以下是统计和广告，与演示无关，不必理会 -->
+<style type="text/css">
+h1 { margin: 40px; font: 32px Microsoft Yahei; text-align: center;}
+h2 { margin: 20px 0; font: 24px Microsoft Yahei; }
+pre { font: 14px '宋体';}
+
+.vad { margin:50px 0 5px; font-family: arial,宋体,sans-serif; text-align:center;}
+.vad a { display:inline-block; height: 30px; line-height: 30px; margin:0 5px; padding:0 20px; font-size:14px; text-align:center; color:#eee; text-decoration:none; background-color:#222;}
+.vad a:hover { color:#fff; background-color:#000;}
+
+.a728x90 { width: 728px; height: 90px; margin: 0 auto;}
+</style>
+
+<p class="vad">
+	<a href="http://www.dowebok.com/" target="_blank">dowebok.com</a>
+	<a href="http://www.dowebok.com/html/2013/46.html" target="_blank">说 明</a>
+	<a href="http://www.dowebok.com/plus/download.php?open=0&aid=46&cid=3" target="_blank">下 载</a>
+</p>
+
+</body>
+</html>

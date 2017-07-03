@@ -1,0 +1,21 @@
+﻿body { margin: 0; padding: 0; font: normal 12px Microsoft Yahei; color: #6c6c6c; background-color: #f0f0f0; }
+
+.gg { height: 500px; position: relative; z-index: 1; margin: 0 auto; background: #d3d3d3 url(../images/loading.jpg) repeat-x; overflow: hidden; }
+.ggLoading { position: absolute; left: 40%; top: 200px; width: 325px; height: 56px; text-align: center; background-position: 0 -274px; background-repeat: no-repeat; line-height: 56px; color: #9c9c9c; }
+.ggLoading2 { width: 330px; height: 56px; background-position: 213px -330px; background-repeat: no-repeat; }
+.ggLoading em { font-weight: bold; }
+.ggs { width: 200%; height: 500px; left: -50%; top: 0; position: absolute; }
+.ggBox { width: 1920px; height: 500px; margin: 0 auto; }
+.ggBox a { display: block; width: 1920px; height: 500px; position: absolute; z-index: 1; opacity: 0.1; text-decoration: none; }
+.ggBox img { display: block; width: 1920px; height: 500px; border: 0 none;}
+.ggb { position: absolute; left: 0; bottom: 0; z-index: 4; width: 100%; height: 50px; background: url(../images/slide.png) 0 -50px repeat-x; }
+
+.ggBtns { position: relative; width: 962px; height: 50px; margin: 0 auto;}
+.ggBtns a { float: left; width: 240px; height: 50px; text-align: center; color: #848380; font-size: 14px; text-decoration: none; position: relative; outline: none; background-repeat: no-repeat; cursor: pointer; }
+.ggBtns a:hover { color: #e7e7e7; }
+.ggBtns a:focus { outline: none; }
+.ggBtns a.ggOn { color: #e7e7e7; }
+.ggBtns .first { padding-left: 1px; background: url(../images/slide.png) 0 -150px no-repeat }
+.ggBtns .last { padding-right: 1px; background: url(../images/slide.png) right bottom no-repeat }
+.ggBtns em { display: block; width: 240px; height: 40px; padding-top: 10px; line-height: 40px; font-style: normal; background: url(../images/slide.png) 0 00px repeat-x; overflow: hidden; }
+.ggOn em { background: url(../images/slide.png) 0 -100px;}

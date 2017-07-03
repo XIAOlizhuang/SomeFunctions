@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>记事本风格用户登录界面演示_dowebok</title>
+<style>
+* { margin: 0; padding: 0;}
+body { font: 14px Microsoft Yahei; background: url(images/body_bg.jpg) 50% 0 repeat-x;}
+.ui-login { position: absolute; left: 50%; top: 50%; width: 410px; height: 430px; margin: -350px 0 0 -205px; background-image: url(images/bg1.png);}
+.ui-login h1 { position: relative; left: -5px; height: 36px; padding: 83px 0 10px; line-height: 36px; font-size: 20px; font-weight: 500; color: #73848a; text-align: center;}
+.ui-form-item { position: relative; width: 242px; height: 42px; padding: 0 0 15px 74px; overflow: hidden;}
+.ui-label { position: absolute; left: 74px; top: 0; z-index: 2; width: 242px; height: 42px; line-height: 42px; color: #797979; text-align: center;}
+.ui-text, .ui-password { position: relative; z-index: 1; width: 222px; height: 42px; padding: 0 10px; border: 0 none; line-height: 42px; font-family: verdana; color: #797979; text-align: center; background-image: url(images/bg2.png); _background: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/bg2.png', sizingMethod='scale');}
+.ui-form-item-focus .ui-text, .ui-form-item-focus .ui-password { background-image: url(images/bg3.png); _background: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/bg3.png', sizingMethod='scale');}
+.ui-form-item-forgot { height: 20px; font-size: 12px; text-align: right;}
+.ui-form-item-forgot a { color: #e86b69;}
+.ui-button-submit { display: block; width: 242px; height: 42px; border: 0 none; text-indent: -9999px; background-color: transparent; cursor: pointer;}
+</style>
+</head>
+
+<body>
+<div class="ui-login">
+	<h1>用户登录</h1>
+	<div class="ui-form-item">
+		<label class="ui-label" for="username">用户名</label>
+		<input type="text" class="ui-text" id="username">
+	</div>
+	<div class="ui-form-item">
+		<label class="ui-label" for="password">密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+		<input type="password" class="ui-password" id="password">
+	</div>
+	<div class="ui-form-item ui-form-item-forgot">
+		<a href="###">忘记密码？</a>
+	</div>
+	<div class="ui-form-item">
+		<input type="submit" class="ui-button-submit" value="登录">
+	</div>
+</div>
+
+<script src="js/jquery-1.9.0.min.js"></script>
+<script>
+$(function(){
+	var $input = $('input:lt(2)');
+	$input.each(function(){
+		$(this).on({
+			focus : function(){
+				var $ui_form_item = $(this).parent();
+				var $label = $(this).prev();
+				$ui_form_item.addClass('ui-form-item-focus');
+				$label.hide();
+			},
+			blur : function(){
+				var $ui_form_item = $(this).parent();
+				var $label = $(this).prev();
+				$ui_form_item.removeClass('ui-form-item-focus');
+				if($(this).val() == ''){
+					$label.show();
+				}			
+			}
+		});
+	});
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+<!-- 以下是统计和广告，与演示无关，不必理会 -->
+<style type="text/css">
+.vad { margin:600px 0 5px; font-family: arial,宋体,sans-serif; text-align:center;}
+.vad a { display:inline-block; height: 30px; line-height: 30px; margin:0 5px; padding:0 20px; font-size:14px; text-align:center; color:#eee; text-decoration:none; background-color:#222;}
+.vad a:hover { color:#fff; background-color:#000;}
+
+.a728x90 { width: 728px; height: 90px; margin: 0 auto;}
+</style>
+
+<p class="vad"><a href="http://www.dowebok.com/" target="_blank">dowebok.com</a> <a href="http://www.dowebok.com/html/2013/20.html" target="_blank">说 明</a> <a href="http://www.dowebok.com/plus/download.php?open=0&aid=20&cid=3" target="_blank">下 载</a></p>
+
+</body>
+</html>

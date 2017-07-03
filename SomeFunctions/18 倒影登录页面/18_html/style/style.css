@@ -1,0 +1,23 @@
+﻿body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, form, table, input, select { margin: 0; padding: 0;}
+ul, ol { list-style-type: none;}
+
+body { font: 12px Arial, sans-serif;}
+
+.login1 { background-color: #57809a;}
+.login { width: 1004px; height: 665px; margin: 0 auto; background-image: url(../images/login1.png);}
+.login h1 { display: none;}
+.login ul { width: 298px; height: 168px; padding: 211px 0 0 352px;}
+.login li { margin-left: 92px;}
+.login label { display: none;}
+.login .username { padding-top: 20px; height: 24px; overflow: hidden;}
+.login .username select, .login .username input { padding: 2px; width: 153px; border: 1px solid #516e80;}
+.login .username input { width: 148px;}
+.login .password { padding-top: 9px; height: 23px; overflow: hidden;}
+.login .password input { padding: 2px; width: 148px; border: 1px solid #516e80;}
+.login .code { padding-top: 8px; height: 23px; overflow: hidden;}
+.login .code input { padding: 2px; width: 70px; border: 1px solid #516e80;}
+.login .send { padding-top: 13px;}
+.login .send input { display: block; width: 150px; height: 24px; border: none; background-color: transparent; text-indent: -9999px; cursor: pointer;}
+.login2 { background-color: #9B9B9B;}
+.login2 .login { width: 1004px; height: 665px; margin: 0 auto; background-image: url(../images/login2.png);}
+.login img { vertical-align: top; height:21px;}

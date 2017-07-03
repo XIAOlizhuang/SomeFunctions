@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>仿亚马逊风格的图片滚动效果演示_做好网站</title>
+<link rel="stylesheet" href="css/amazon_scroller.css">
+<script src="js/jquery-1.9.0.min.js"></script>
+<script src="js/amazon_scroller.js"></script>
+<script>
+$(function() {
+    $("#amazon_scroller1").amazon_scroller({
+        scroller_title_show: 'enable',
+        scroller_time_interval: '4000',
+        scroller_window_padding: '20',
+        scroller_border_size: '2',
+        scroller_border_color: '#9c6',
+        scroller_images_width: '110',
+        scroller_images_height: '140',
+        scroller_title_size: '12',
+        scroller_title_color: 'black',
+        scroller_show_count: '3',
+        directory: 'images'
+    });
+});
+</script>
+</head>
+
+<body>
+<h1>仿亚马逊风格的图片滚动效果演示</h1>
+
+<div id="amazon_scroller1" class="amazon_scroller">
+    <div class="amazon_scroller_mask">
+        <ul>
+            <li><a href="" title="精通CSS"><img src="images/1.jpg" alt=""></a></li>
+            <li><a href="" title="CSS设计彻底研究"><img src="images/2.jpg" alt=""></a></li>
+            <li><a href="" title="锋利的jQuery"><img src="images/3.jpg" alt=""></a></li>
+            <li><a href="" title="PHP与MySQL 5程序设计"><img src="images/4.jpg" alt=""></a></li>
+            <li><a href="" title="重构HTML改善Web应用的设计"><img src="images/5.jpg" alt=""></a></li>
+            <li><a href="" title="SEO教程:搜索引擎优化入门与进阶"><img src="images/6.jpg" alt=""></a></li>
+        </ul>
+    </div>
+    <ul class="amazon_scroller_nav">
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- 以下是统计和广告，与演示无关，不必理会 -->
+<style type="text/css">
+h1 { margin: 40px 0 100px; font: 32px Microsoft Yahei; text-align: center;}
+
+.vad { margin:100px 0 5px; font-family: arial,宋体,sans-serif; text-align:center;}
+.vad a { display:inline-block; height: 30px; line-height: 30px; margin:0 5px; padding:0 20px; font-size:14px; text-align:center; color:#eee; text-decoration:none; background-color:#222;}
+.vad a:hover { color:#fff; background-color:#000;}
+
+.a728x90 { width: 728px; height: 90px; margin: 0 auto;}
+</style>
+
+<p class="vad"><a target="_blank" href="http://www.dowebok.com/">dowebok.com</a> <a target="_blank" href="http://www.dowebok.com/html/2013/amazon-scroller.html">原 文</a> <a target="_blank" href="http://www.dowebok.com/plus/download.php?open=0&amp;aid=17&amp;cid=3">下 载</a></p>
+
+</body>
+</html>

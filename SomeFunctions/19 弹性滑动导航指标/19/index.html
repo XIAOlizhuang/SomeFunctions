@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>jQuery弹性滑动导航菜单演示_做好网站</title>
+<style>
+body{ font-size:100%; font-family:"Microsoft YaHei","Arial"; background:#fff;}
+#nav{ position:relative; width:832px; _width:835px; margin:100px auto 0 auto; border-bottom:2px #ddd solid;}
+#nav .nav-menu{ height:50px;}
+#nav .nav-menu a{ display:block; float:left; height:50px; padding:0 40px; line-height:50px; color:#666; font-size:16px; text-decoration:none;}
+#nav .nav-current{ position:absolute; bottom:-2px; height:2px; overflow:hidden; background:#80b600;}
+</style>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	(function(){
+		var $navcur = $(".nav-current");
+		var $nav = $("#nav");
+		var current = ".current";
+		var itemW = $nav.find(current).innerWidth();	//默认当前位置宽度
+		var defLeftW = $nav.find(current).position().left;	//默认当前位置Left值
+
+		//添加默认下划线
+		$navcur.css({width:itemW,left:defLeftW});
+
+		//hover事件
+		$nav.find("a").hover(function(){
+			var index = $(this).index();	//获取滑过元素索引值
+			var leftW = $(this).position().left;	//获取滑过元素Left值
+			var currentW = $nav.find("a").eq(index).innerWidth();	//获取滑过元素Width值
+			$navcur.stop().animate({
+				left: leftW,
+				width: currentW
+			},300);
+			
+		},function(){
+			$navcur.stop().animate({
+				left: defLeftW,
+				width: itemW
+			},300)
+		})
+	})();
+});
+</script>
+</head>
+
+<body>
+<h1>jQuery弹性滑动导航菜单演示</h1>
+
+<div id="nav">
+	<div class="nav-menu">
+		<a href="http://www.dowebok.com" class="current" target="_blank">首页</a>
+		<a href="http://www.dowebok.com/html/2013/19.html" target="_blank">了解我们</a>
+		<a href="###">产品展示</a>
+		<a href="###">服务报价</a>
+		<a href="###">最新消息</a>
+		<a href="###">联系方式</a>
+	</div>
+	<div class="nav-current"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- 以下是统计和广告，与演示无关，不必理会 -->
+<style type="text/css">
+h1 { margin: 40px; font: 32px Microsoft Yahei; text-align: center;}
+
+.vad { margin:100px 0 5px; font-family: arial,宋体,sans-serif; text-align:center;}
+.vad a { display:inline-block; height: 30px; line-height: 30px; margin:0 5px; padding:0 20px; font-size:14px; text-align:center; color:#eee; text-decoration:none; background-color:#222;}
+.vad a:hover { color:#fff; background-color:#000;}
+
+.a728x90 { width: 728px; height: 90px; margin: 0 auto;}
+</style>
+
+<p class="vad"><a href="http://www.dowebok.com/" target="_blank">dowebok.com</a> <a href="http://www.dowebok.com/html/2013/19.html" target="_blank">说 明</a> <a href="http://www.dowebok.com/plus/download.php?open=0&aid=19&cid=3" target="_blank">下 载</a></p>
+
+</body>
+</html>

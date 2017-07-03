@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Timeliner - jQuery定时幻灯片插件演示_dowebok</title>
+<link rel="stylesheet" href="css/timeliner.css">
+<link rel="stylesheet" href="css/timeliner_styling.css">
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.timeliner.min.js"></script>
+<script>
+$(function(){
+	$('#example1').timeliner({
+		containerwidth : 696, //幻灯片宽度
+		containerheight : 241, //幻灯片高度
+		timelinewidth: 550, //时间线宽度
+		timelineheight: 8, //时间线高度
+		repeat: false, //循环播放
+		timedisplayposition: 'below', //时间显示位置
+		transition: 'fade' //切换方式
+	});
+});
+function start_callback(id){
+	if(id=='example1'){
+		$('#callback_log').html('幻灯片 "'+id+'" 开始');
+	}
+}
+function newslide_callback(id, slide){
+	if(id=='example1'){
+		$('#callback_log').html('幻灯片 "'+id+'" 切换到 '+slide);
+	}
+}
+function end_callback(id){
+	if(id=='example1'){
+		$('#callback_log').html('幻灯片 "'+id+'" 结束');
+	}
+}
+function paused_callback(id, slide){
+	if(id=='example1'){
+		$('#callback_log').html('幻灯片 "'+id+'" 暂停在幻灯片 '+slide);
+	}
+}
+function resumed_callback(id, slide){
+	if(id=='example1'){
+		$('#callback_log').html('幻灯片 "'+id+'" 重新开始从幻灯片 '+slide);
+	}
+}
+function click_callback(id, slide){
+	if(id=='example1'){
+		$('#callback_log').html('Clicked on slide '+slide+' of Timeliner "'+id+'"');
+	}
+}
+</script>
+</head>
+
+<body>
+<h1>Timeliner - jQuery定时幻灯片插件演示</h1>
+
+<!-- 代码 开始 -->
+<ul id="example1" class="timeliner">
+	<li title="第一个">
+		<img src="images/01.jpg" alt="">
+	</li>
+	<li title="第二个">
+		<img src="images/02.jpg" alt="">
+	</li>
+	<li title="第三个">
+		<img src="images/03.jpg" alt="">
+	</li>
+	<li title="第四个">
+		<img src="images/04.jpg" alt="">
+	</li>
+	<li title="第五个">
+		<img src="images/05.jpg" alt="">
+	</li>
+</ul>
+<!-- 代码 结束 -->
+
+<div class="callback">返回值：<span id="callback_log"></span></div>
+
+
+
+
+
+
+
+
+
+
+<!-- 以下是统计和广告，与演示无关，不必理会 -->
+<style type="text/css">
+h1 { margin: 40px; font: 32px Microsoft Yahei; text-align: center;}
+
+.timeliner { margin: 0 auto;}
+.callback { margin-top: 10px; font-size: 14px; text-align: center;}
+
+.vad { margin:150px 0 5px; font-family: arial,宋体,sans-serif; text-align:center;}
+.vad a { display:inline-block; height: 30px; line-height: 30px; margin:0 5px; padding:0 20px; font-size:14px; text-align:center; color:#eee; text-decoration:none; background-color:#222;}
+.vad a:hover { color:#fff; background-color:#000;}
+
+.a728x90 { width: 728px; height: 90px; margin: 0 auto;}
+</style>
+
+<p class="vad">
+    <a href="http://www.dowebok.com/" target="_blank">dowebok.com</a>
+    <a href="http://www.dowebok.com/html/2013/timeliner.html" target="_blank">说 明</a>
+    <a href="http://www.dowebok.com/plus/download.php?open=0&aid=39&cid=3" target="_blank">下 载</a>
+</p>
+
+</body>
+</html>

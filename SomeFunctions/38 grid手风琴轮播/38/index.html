@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>gridAccordion - 非常酷的jQuery手风琴插件演示_dowebok</title>
+<link rel="stylesheet" href="css/grid-accordion.css">
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.gridAccordion.min.js"></script>
+<script type="text/javascript">
+$(function($) {
+	$('.accordion').gridAccordion({
+	    width: 960,
+	    height: 680,
+	    columns: 5,
+	    distance: 2,
+	    closedPanelWidth: 10,
+	    closedPanelHeight: 10,
+	    alignType: 'centerCenter',
+	    slideshow: true,
+	    panelProperties: {
+	        0 : {
+	            captionWidth: 200,
+	            captionHeight: 35,
+	            captionTop: 30,
+	            captionLeft: 30
+	        },
+	        4 : {
+	            captionWidth: 150,
+	            captionHeight: 100,
+	            captionTop: 30,
+	            captionLeft: 650
+	        },
+	        7 : {
+	            captionWidth: 310,
+	            captionHeight: 35,
+	            captionTop: 350,
+	            captionLeft: 40
+	        },
+	        8 : {
+	            captionWidth: 300,
+	            captionHeight: 40,
+	            captionTop: 150,
+	            captionLeft: 35
+	        },
+	        11 : {
+	            captionWidth: 150,
+	            captionHeight: 120,
+	            captionTop: 300,
+	            captionLeft: 30
+	        },
+	        14 : {
+	            captionWidth: 300,
+	            captionHeight: 40,
+	            captionTop: 30,
+	            captionLeft: 50
+	        },
+	        16 : {
+	            captionWidth: 150,
+	            captionHeight: 120,
+	            captionTop: 150,
+	            captionLeft: 10
+	        },
+	        18 : {
+	            captionWidth: 300,
+	            captionHeight: 40,
+	            captionTop: 130,
+	            captionLeft: 50
+	        }
+	    }
+	});
+});
+</script>
+</head>
+
+<body>
+<h1>gridAccordion - 非常酷的jQuery手风琴插件演示</h1>
+
+<!-- html 开始 -->
+<ul class="accordion" style="margin: 0 auto;">
+	<li> <a href="http://www.dowebok.com/" target="_blank"> <img src="images/image1.jpg" alt=""></a>
+		<div class="caption">This is just a simple caption.</div>
+	</li>
+	<li> <a href="http://www.dowebok.com/html/2013/38.html" target="_blank"> <img src="images/image2.jpg" alt=""></a> </li>
+	<li> <a href="#"> <img src="images/image3.jpg" alt=""></a> </li>
+	<li> <a href="#"> <img src="images/image4.jpg" alt=""></a> </li>
+	<li> <a href="#"> <img src="images/image5.jpg" alt=""></a>
+		<div class="caption"> <u>Title</u> <br/>
+			<br/>
+			This is a list of items:
+			<ul>
+				<li>first item</li>
+				<li>second item</li>
+				<li>third item</li>
+			</ul>
+		</div>
+	</li>
+	<li> <a href="#"> <img src="images/image1.jpg" alt=""></a> </li>
+	<li> <a href="#"> <img src="images/image2.jpg" alt=""></a> </li>
+	<li> <a href="#"> <img src="images/image3.jpg" alt=""></a>
+		<div class="caption">Captions can have any position and any size.</div>
+	</li>
+	<li> <a href="#"> <img src="images/image4.jpg" alt=""></a>
+		<div class="caption"> Add <b>HTML</b> elements like <a href="#">links</a> or
+			<input type="button" value="Buttons">
+		</div>
+	</li>
+	<li> <a href="#"> <img src="images/image5.jpg" alt=""></a> </li>
+	<li> <a href="#"> <img src="images/image1.jpg" alt=""></a> </li>
+	<li> <a href="#"> <img src="images/image2.jpg" alt=""></a>
+		<div class="caption"> <u>Title</u> <br/>
+			<br/>
+			This is a list of items:
+			<ul>
+				<li>first item</li>
+				<li>second item</li>
+				<li>third item</li>
+			</ul>
+		</div>
+	</li>
+	<li> <a href="#"> <img src="images/image3.jpg" alt=""></a> </li>
+	<li> <a href="#"> <img src="images/image4.jpg" alt=""></a> </li>
+	<li> <a href="#"> <img src="images/image5.jpg" alt=""></a>
+		<div class="caption"> Add <b>HTML</b> elements like <a href="#">links</a> or
+			<input type="button" value="Buttons">
+		</div>
+	</li>
+	<li> <a href="#"> <img src="images/image1.jpg" alt=""></a> </li>
+	<li> <a href="#"> <img src="images/image2.jpg" alt=""></a>
+		<div class="caption"> <u>Title</u> <br/>
+			<br/>
+			This is a list of items:
+			<ul>
+				<li>first item</li>
+				<li>second item</li>
+				<li>third item</li>
+			</ul>
+		</div>
+	</li>
+	<li> <a href="#"> <img src="images/image3.jpg" alt=""></a> </li>
+	<li> <a href="#"> <img src="images/image4.jpg" alt=""></a>
+		<div class="caption"> Add <b>HTML</b> elements like <a href="#">links</a> or
+			<input type="button" value="Buttons">
+		</div>
+	</li>
+	<li> <a href="#"> <img src="images/image5.jpg" alt=""></a> </li>
+</ul>
+<!-- html 结束 -->
+
+
+
+
+
+
+
+
+
+<!-- 以下是统计和广告，与演示无关，不必理会 -->
+<style type="text/css">
+h1 { margin: 40px; font: 32px Microsoft Yahei; text-align: center;}
+
+.vad { margin:50px 0 5px; font-family: arial,宋体,sans-serif; text-align:center;}
+.vad a { display:inline-block; height: 30px; line-height: 30px; margin:0 5px; padding:0 20px; font-size:14px; text-align:center; color:#eee; text-decoration:none; background-color:#222;}
+.vad a:hover { color:#fff; background-color:#000;}
+
+.a728x90 { width: 728px; height: 90px; margin: 0 auto;}
+</style>
+
+<p class="vad">
+    <a href="http://www.dowebok.com/" target="_blank">dowebok.com</a>
+    <a href="http://www.dowebok.com/html/2013/38.html" target="_blank">说 明</a>
+    <a href="http://www.dowebok.com/plus/download.php?open=0&aid=38&cid=3" target="_blank">下 载</a>
+</p>
+
+</body>
+</html>

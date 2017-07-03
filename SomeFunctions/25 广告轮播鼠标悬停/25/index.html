@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>简单实用的jQuery幻灯片插件slide演示_做好网站</title>
+<style>
+body { font: 12px Microsoft Yahei; }
+ul { list-style: none; }
+#container { position: relative; width: 520px; height: 320px; margin: 0 auto; overflow: hidden; }
+.clear-fix:after { content: ' '; display: block; height: 0; visibility: hidden; clear: both; }
+.clear-fix { zoom: 1; }
+.content { margin: 0; padding: 0;}
+.content li { width: 520px; height: 320px; float: left; }
+.content img { display: block; border: none; }
+.trigger { position: absolute; bottom: 10px; right: 10px; }
+.trigger li { float: left; display: inline; margin-left: 10px; line-height: 18px; color: #333; font-size: 18px; overflow: hidden; cursor: pointer; }
+.trigger li.current { color: red; }
+</style>
+</head>
+
+<body>
+<h1>简单实用的jQuery幻灯片插件slide演示</h1>
+
+<div id="container">
+	<ul class="clear-fix content">
+		<li>
+			<a href="http://www.dowebok.com/"><img src="images/img1.jpg" alt=""></a>
+		</li>
+		<li>
+			<a href="http://www.dowebok.com/"><img src="images/img2.jpg" alt=""></a>
+		</li>
+		<li>
+			<a href="http://www.dowebok.com/"><img src="images/img3.jpg" alt=""></a>
+		</li>
+		<li>
+			<a href="http://www.dowebok.com/"><img src="images/img4.jpg" alt=""></a>
+		</li>
+		<li>
+			<a href="http://www.dowebok.com/"><img src="images/img5.jpg" alt=""></a>
+		</li>
+		<li>
+			<a href="http://www.dowebok.com/"><img src="images/img6.jpg" alt=""></a>
+		</li>
+	</ul>
+	<ul class="clear-fix trigger">
+		<li class="current">●</li>
+		<li>●</li>
+		<li>●</li>
+		<li>●</li>
+		<li>●</li>
+		<li>●</li>
+	</ul>
+</div>
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/slide.min.js"></script>
+<script>
+$(function() {
+	$.slide('#container', '.content', '.trigger', {
+		auto: true,
+		delay: 4000,
+		interval: 4000,
+		duration: 400,
+		easing: 'linear',
+		activeCls: 'current'
+	});
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+<!-- 以下是统计和广告，与演示无关，不必理会 -->
+<style type="text/css">
+h1 { margin: 40px; font: 32px Microsoft Yahei; text-align: center;}
+
+.vad { margin:100px 0 5px; font-family: arial,宋体,sans-serif; text-align:center;}
+.vad a { display:inline-block; height: 30px; line-height: 30px; margin:0 5px; padding:0 20px; font-size:14px; text-align:center; color:#eee; text-decoration:none; background-color:#222;}
+.vad a:hover { color:#fff; background-color:#000;}
+</style>
+
+<p class="vad"><a href="http://www.dowebok.com/" target="_blank">dowebok.com</a> <a href="http://www.dowebok.com/html/2013/25.html" target="_blank">说 明</a> <a href="http://www.dowebok.com/plus/download.php?open=0&aid=25&cid=3" target="_blank">下 载</a></p>
+
+</body>
+</html>

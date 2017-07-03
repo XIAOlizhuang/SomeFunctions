@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>一个很酷的jQuery动画菜单_做好网站</title>
+<style>
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
+	margin: 0; padding: 0; border: 0;
+}
+body {
+	background: #f5f0e0 url(images/noise.png);
+}
+#container {
+	height: 800px;
+	background: url(images/bg.jpg) center top no-repeat;
+}
+ul#nav {
+	width: 700px; margin: 0 auto; text-align: center; overflow: hidden;
+}
+ul#nav li {
+	float: left; list-style: none; 
+}
+ul#nav li a {
+	display: block; width: 97px; height: 77px; 
+	padding: 72px 0 0 0; margin: 0 32px 0 32px;
+	font: bold 16px Helvetica, Arial, Sans-Serif; text-transform: uppercase;
+	color: #9c5959; text-shadow: 0 1px 3px #c4bda6; text-decoration: none;
+	background: url(images/label.png) 0 -149px no-repeat; 
+}
+ul#nav li a:hover {
+	background: url(images/label.png) 0 0 no-repeat;
+	color: #eee9d9; text-shadow: 0 2px 3px #4c2222;
+}
+ul#nav li a.js:hover {
+	background: url(images/label.png) 0 -149px no-repeat;
+}
+</style>
+<script src="js/jquery-1.5.2.min.js"></script> 
+<script src="js/animate-bg.js"></script>
+<script  type="text/javascript">
+$(document).ready(function() {
+	$("ul#nav li a").addClass("js");
+	$("ul#nav li a").hover(
+		function () {
+			$(this).stop(true,true).animate({backgroundPosition:"(0 0)"}, 200);
+			$(this).animate({backgroundPosition:"(0 -5px)"}, 150);
+		}, 
+		function () {
+			$(this).animate({backgroundPosition:"(0 -149px)"}, 200);
+		}
+	);
+});
+</script>
+</head>
+
+<body>
+<div id="container">
+	<ul id="nav">
+		<li><a href="http://www.dowebok.com" onclick="return false">首 页</a></li>
+		<li><a href="http://www.dowebok.com/html/2013/15.html" onclick="return false">关 于</a></li>
+		<li><a href="#">链 接</a></li>
+		<li><a href="#">联 系</a></li>
+	</ul>
+
+
+
+
+
+
+
+
+
+
+<!-- 以下是统计和广告，与演示无关，不必理会 -->
+<style type="text/css">
+h1 { margin: 40px; font: 32px Microsoft Yahei; text-align: center;}
+
+.vad { margin:300px 0 5px; font-family: arial,宋体,sans-serif; text-align:center;}
+.vad a { display:inline-block; margin:0 5px; padding:7px 10px; font-size:14px; text-align:center; color:#eee; text-decoration:none; background-color:#222;}
+.vad .down { width: 80px;}
+.vad a:hover { color:#fff; background-color:#000;}
+
+.a728x90 { width: 728px; height: 90px; margin: 0 auto;}
+</style>
+
+<p class="vad">
+	<a href="http://www.dowebok.com/" target="_blank">访问 dowebok.com</a>
+	<a href="http://www.dowebok.com/html/2013/15.html" target="_blank">使用说明及方法</a>
+</p>
+
+</div>
+
+</body>
+</html>
